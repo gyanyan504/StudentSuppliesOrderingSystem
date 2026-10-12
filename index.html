@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Supplies Ordering System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Student Supplies Ordering System</h1>
+  </header>
+
+  <div class="layout-container">
+    
+    <!-- 1. Product List Section -->
+    <section class="panel" id="product-list-section">
+      <h2>Available Supplies</h2>
+      <div id="products-grid" class="products-grid">
+        <!-- Products will be injected here via app.js -->
+      </div>
+    </section>
+
+    <!-- Sidebar: Cart, Summary, Payment, and Receipt -->
+    <div class="sidebar">
+
+      <!-- 2. Shopping Cart Section -->
+      <section class="panel" id="cart-section">
+        <h2>Shopping Cart</h2>
+        <div id="cart-items">
+          <p class="empty-text">Your cart is currently empty.</p>
+        </div>
+      </section>
+
+      <!-- 3. Order Summary Section -->
+      <section class="panel" id="summary-section">
+        <h2>Order Summary</h2>
+        <div class="summary-row">
+          <span>Total Items:</span>
+          <span id="summary-items-count">0</span>
+        </div>
+        <div class="summary-row total-row">
+          <span>Total Amount:</span>
+          <span id="summary-total">₱0.00</span>
+        </div>
+      </section>
+
+      <!-- 4. Payment Section -->
+      <section class="panel" id="payment-section">
+        <h2>Payment</h2>
+        <div class="payment-control">
+          <label for="cash-input">Cash Rendered (₱):</label>
+          <input type="number" id="cash-input" placeholder="0.00" min="0" step="1" disabled>
+        </div>
+        <button id="pay-btn" disabled>Complete Payment</button>
+      </section>
+
+      <!-- 5. Receipt Section -->
+      <section class="panel" id="receipt-section">
+        <h2>Official Receipt</h2>
+        <div id="receipt-content">
+          <p class="empty-text">Receipt will appear here after checkout.</p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

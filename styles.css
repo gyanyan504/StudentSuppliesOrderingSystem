@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f6f8;
+  color: #222;
+  padding: 20px;
+}
+
+header {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  padding: 16px 24px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Two-column responsive desktop layout */
+.layout-container {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.panel {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.panel h2 {
+  font-size: 1.15rem;
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e5e7eb;
+  color: #1f2937;
+}
+
+/* Products Section Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.product-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 16px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.product-card .price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #047857;
+  margin-bottom: 12px;
+}
+
+.btn-add-cart {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-add-cart:hover {
+  background-color: #1d4ed8;
+}
+
+/* Summary Rows */
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+.total-row {
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-top: 1px dashed #d1d5db;
+  padding-top: 8px;
+  margin-top: 8px;
+}
+
+/* Payment Inputs */
+.payment-control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.payment-control input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#pay-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#pay-btn:disabled, .payment-control input:disabled {
+  background-color: #e5e7eb;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.empty-text {
+  color: #6b7280;
+  font-style: italic;
+  font-size: 0.9rem;
+}
