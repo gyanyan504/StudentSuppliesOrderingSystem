@@ -145,3 +145,167 @@ header {
   font-style: italic;
   font-size: 0.9rem;
 }
+/* Cart Item Styling */
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e7eb;
+  gap: 8px;
+}
+
+.cart-item-info {
+  flex: 1;
+}
+
+.cart-item-info .item-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #111827;
+}
+
+.cart-item-info .item-price {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.cart-item-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.qty-btn {
+  background-color: #e5e7eb;
+  border: 1px solid #d1d5db;
+  color: #111827;
+  width: 26px;
+  height: 26px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qty-btn:hover {
+  background-color: #d1d5db;
+}
+
+.item-qty {
+  font-size: 0.95rem;
+  font-weight: 600;
+  min-width: 20px;
+  text-align: center;
+}
+
+.cart-item-subtotal {
+  font-weight: 600;
+  min-width: 65px;
+  text-align: right;
+  color: #047857;
+  font-size: 0.95rem;
+}
+
+.btn-remove {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  margin-left: 6px;
+}
+
+.btn-remove:hover {
+  background-color: #dc2626;
+}
+/* Payment Error & Success Notifications */
+.error-msg {
+  display: none;
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #f87171;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.payment-success-badge {
+  background-color: #d1fae5;
+  color: #065f46;
+  border: 1px solid #34d399;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+/* Receipt Details */
+.receipt-box {
+  background-color: #f9fafb;
+  border: 1px dashed #9ca3af;
+  padding: 12px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.receipt-box h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  text-align: center;
+  color: #111827;
+}
+
+.receipt-item-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.receipt-divider {
+  border-top: 1px dashed #d1d5db;
+  margin: 8px 0;
+}
+/* Receipt Meta (Ref # and Date) */
+.receipt-meta {
+  font-size: 0.8rem;
+  color: #4b5563;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.receipt-item-detail {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+}
+
+.receipt-item-detail span:first-child {
+  color: #1f2937;
+}
+
+/* New Transaction Button */
+.btn-new-transaction {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: #1e3a8a;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.btn-new-transaction:hover {
+  background-color: #1d4ed8;
+}

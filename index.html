@@ -18,7 +18,7 @@
     <section class="panel" id="product-list-section">
       <h2>Available Supplies</h2>
       <div id="products-grid" class="products-grid">
-        <!-- Products will be injected here via app.js -->
+        <!-- Injected via app.js -->
       </div>
     </section>
 
@@ -48,19 +48,23 @@
 
       <!-- 4. Payment Section -->
       <section class="panel" id="payment-section">
-        <h2>Payment</h2>
+        <h2>Payment Section</h2>
         <div class="payment-control">
-          <label for="cash-input">Cash Rendered (₱):</label>
-          <input type="number" id="cash-input" placeholder="0.00" min="0" step="1" disabled>
+          <label for="amount-paid">Amount Paid (₱):</label>
+          <input type="number" id="amount-paid" placeholder="0.00" min="0" step="any" disabled>
         </div>
-        <button id="pay-btn" disabled>Complete Payment</button>
+        
+        <!-- Error Message Container -->
+        <p id="payment-error" class="error-msg"></p>
+        
+        <button id="confirm-payment-btn" disabled>Confirm Payment</button>
       </section>
 
       <!-- 5. Receipt Section -->
       <section class="panel" id="receipt-section">
-        <h2>Official Receipt</h2>
+        <h2>Receipt Section</h2>
         <div id="receipt-content">
-          <p class="empty-text">Receipt will appear here after checkout.</p>
+          <p class="empty-text">Receipt will appear here after successful payment.</p>
         </div>
       </section>
 
